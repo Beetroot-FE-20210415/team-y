@@ -31,18 +31,17 @@
 .img-border {
     width: 100%;
     position: relative;
-
     &::before {
         content: "";
         display: block;
         padding-top: 475 / 600 * 100%;
     }
-
     &__img {
         height: 100%;
         position: absolute;
         top: 0;
         left: 0;
+        box-shadow: 0 0 15px 10px rgba($color: #000000, $alpha: 0.3);
     }
     &__border {
         border-radius: 5px;
@@ -60,31 +59,24 @@
             padding-top: 100%;
         }
     }
-
     &--left {
         .img-border__border {
             left: 0;
             right: auto;
         }
-
         .img-border__img {
             right: 0;
             left: auto;
         }
     }
-
     @media screen and (max-width: 720px) {
-
         overflow: hidden;
-
         &::before {
             padding-top: 100%;
         }
-
         &__border {
             display: none;
         }
-
         &__img {
             height: auto;
             width: 100%;
