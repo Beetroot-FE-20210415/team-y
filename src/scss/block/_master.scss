@@ -1,6 +1,6 @@
 .section-master {
     background-image: url("../img/master/masterbg.png");
-    background-position: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     &__header {
@@ -10,14 +10,14 @@
         text-align: center;
         color: white;
         text-transform: uppercase;
-        margin-bottom: 50px;
+        margin-bottom: 35px;
     }
     &__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
         @media screen and (max-width: 720px) {
-            flex-wrap: wrap;
+            flex-direction: column-reverse;
         }
     }
     &__text-description {

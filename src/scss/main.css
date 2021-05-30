@@ -178,7 +178,7 @@ body {
 
 .section-master {
   background-image: url("../img/master/masterbg.png");
-  background-position: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -190,7 +190,7 @@ body {
   text-align: center;
   color: white;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 
 .section-master__wrapper {
@@ -207,8 +207,10 @@ body {
 
 @media screen and (max-width: 720px) {
   .section-master__wrapper {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 
