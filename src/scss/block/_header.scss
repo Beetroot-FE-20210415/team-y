@@ -75,9 +75,10 @@ ul {
             &--clicked {
                 transform: rotate(5turn);
                 position: fixed;
-                top: 0;
-                left: 0;
+                top: 25px;
                 right: 0;
+                left: 0;
+                margin: 0 auto;
             }
         }
     }
@@ -101,7 +102,7 @@ ul {
     @media screen and (max-width: 800px) {
         display: block;
         &--visible{
-            height: 100%;
+            // height: 100%;
             padding-top: $sterring-wheel-width + 25px;
         }
     }
