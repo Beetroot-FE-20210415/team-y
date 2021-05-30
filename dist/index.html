@@ -10,26 +10,157 @@
 </head>
 
 <body>
-    <section class="section-about">
+
+    <nav class="sticky-nav">
+        <ul class="sticky-nav__list">
+            <li class="sticky-nav__item">
+                <a href="#home" class="sticky-nav__anchor">
+                    home
+                </a>
+            </li>
+            <li class="sticky-nav__item">
+                <a href="#about" class="sticky-nav__anchor">
+                    about
+                </a>
+            </li>
+            <li class="sticky-nav__item">
+                <a href="#team" class="sticky-nav__anchor">
+                    team
+                </a>
+            </li>
+            <li class="sticky-nav__item">
+                <a href="#booking" class="sticky-nav__anchor">
+                    booking
+                </a>
+            </li>
+            <li class="sticky-nav__item">
+                <a href="#menu" class="sticky-nav__anchor">
+                    menu
+                </a>
+            </li>
+            <li class="sticky-nav__item">
+                <a href="galerie" class="sticky-nav__anchor">
+                    galerie
+                </a>
+            </li>
+            <li class="sticky-nav__item">
+                <a href="#events" class="sticky-nav__anchor">
+                    events
+                </a>
+            </li>
+            <li class="sticky-nav__item">
+                <a href="#contacts" class="sticky-nav__anchor">
+                    contact
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <header class="header">
         <div class="container">
-            <div class="section-about__wrapper">
-
-                <div class="section-about__text-description">
-                    <h2 class="section-about__title title">about us</h2>
-                    <p class="section-about__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
-                    <p class="section-about__description">
-                        Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla
-                        facilisis semper laoreet.</p>
-                </div>
-
-                <div class="section-about__img img-border">
-                    <div class="img-border__border"></div>
-                    <img src="./img/about/about_photo.jpg" alt="about" class="img-border__img">
-                </div>
-
+            <div class="header__wrapper">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="" class="header__anchor">
+                            home
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a href="" class="header__anchor">
+                            about
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a href="" class="header__anchor">
+                            team
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a href="" class="header__anchor">
+                            booking
+                        </a>
+                    </li>
+                </ul>
+                <svg class="header__sterring-wheel" viewBox="0 0 150 150">
+                    <use xlink:href="./img/header/icon.svg#sterring-wheel"></use>
+                </svg>
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="" class="header__anchor">
+                            menu
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a href="" class="header__anchor">
+                            galerie
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a href="" class="header__anchor">
+                            events
+                        </a>
+                    </li>
+                    <li class="header__item">
+                        <a href="" class="header__anchor">
+                            contact
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
+    </header>
+    <main>
+        <section class="title-section">
+            <div class="container">
+                <div class="title-section__wrapper">
+                    <div class="title-section__small-schedule">
+                        Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM
+                    </div>
+                    <div class="title-section__main-text">
+                        <div class="title-section__subtitle">
+                            RESTAURANT
+                        </div>
+                        <h1 class="title-section__title title">
+                            hungry people
+                        </h1>
+                        <ul class="title-section__button-list">
+                            <li class="title-section__buttom-item">
+                                <a href="#" class="title-section__btn btn">
+                                    BOOK TABLE
+                                </a>
+                            </li>
+                            <li class="title-section__buttom-item">
+                                <a href="#" class="title-section__btn btn">
+                                    EXPLORE
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="title-section__social-list">
+                        <li class="title-section__social-item">
+                            <a href="https://www.facebook.com/" class="title-section__social-link">
+                                <i class="icon-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="title-section__social-item">
+                            <a href="https://twitter.com/ " class="title-section__social-link">
+                                <i class="icon-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="title-section__social-item">
+                            <a href="https://www.instagram.com/" class="title-section__social-link">
+                                <i class="icon-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="title-section__scroll">
+                    <svg class="title-section__scroll-icon" viewBox="0 0 62 62">
+                        <use xlink:href="./img/title/down-btn.svg#scroll"></use>
+                    </svg>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="js/main.js"></script>
 </body>

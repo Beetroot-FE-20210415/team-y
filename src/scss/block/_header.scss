@@ -1,0 +1,110 @@
+ul {
+    list-style: none;
+}
+
+.header {
+    color: $header-text-color;
+    text-transform: uppercase;
+    padding-top: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__list {
+        display: flex;
+        padding-top: 25px;
+        flex: 0 2 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        
+    }
+
+    &__item {
+        flex: 0 1 100%;
+        text-align: center;
+    }
+
+    &__anchor {
+        text-decoration: none;
+        color: $header-text-color;
+        display: inline-block;
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 3px;
+            background-color: $local-yellow;
+            position: absolute;
+            bottom: 1.5em;
+            transition: transform $header-transition-time;
+            transform: scaleX(0);
+        }
+
+        &:hover::before {
+            transform: scaleX(1);
+        }
+
+    }
+
+    &__sterring-wheel {
+        flex: 0 0 auto;
+        width: $sterring-wheel-width;
+        transition: transform $header-transition-time;
+    }
+}
+
+.sticky-nav {
+    // padding-top: $sterring-wheel-width;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    height: 0;
+    display: none;
+    overflow: hidden;
+    background-color: #777;
+    transition: all $header-transition-time;
+    color: $header-text-color;
+    text-transform: uppercase;
+
+    &__list {
+        width: 100%;
+    }
+
+    &__item {
+        width: 100%;
+        border-bottom: 2px solid #000;
+        transition: background-color $header-transition-time;
+        
+        &:first-child {
+            border-top: 2px solid #000;
+        }
+        
+        &:hover {
+            background-color: $local-yellow;
+        }
+    }
+    
+    &__anchor{
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
+        color: inherit;
+        font-size: 42 / 14 * 1rem;
+        line-height: 50 / 14 * 1rem;
+    }
+}
+
