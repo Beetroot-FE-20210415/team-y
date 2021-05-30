@@ -3,6 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding-bottom: 55px;
     &__header {
         padding-top: 50px;
         letter-spacing: 5px;
@@ -47,5 +48,8 @@
         font-size: 14px;
         color: white;
         opacity: 0.7;
+        @media screen and (max-width: 720px) {
+            margin-bottom: 35px;
+        }
     }
 }
