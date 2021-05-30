@@ -70,9 +70,14 @@ ul {
 
         @media screen and (max-width: 800px) {
             cursor: pointer;
+            z-index: 10;
 
             &--clicked {
                 transform: rotate(5turn);
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
             }
         }
     }
@@ -92,6 +97,14 @@ ul {
     transition: all $header-transition-time;
     color: $header-text-color;
     text-transform: uppercase;
+
+    @media screen and (max-width: 800px) {
+        display: block;
+        &--visible{
+            height: 100%;
+            padding-top: $sterring-wheel-width + 25px;
+        }
+    }
 
     &__list {
         width: 100%;
