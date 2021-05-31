@@ -1,0 +1,90 @@
+.section-booking {
+  padding: 100px 0 45px;
+  background-color: white;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 565px;
+    width: 100%;
+  }
+  &__title {
+    text-align: center;
+    font-size: 36px;
+  }
+  &__form {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  &__input {
+    margin: 5px;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #e5e5e5;
+    max-width: 277.5px;
+    width: calc(50% - 10px);
+  }
+  &__btn {
+    width: 98%;
+    padding: 20px;
+    color: white;
+    background-color: #e8c300;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.25s;
+  }
+  &__btn:hover {
+    background-color: darken(#e8c300, $amount: 2%);
+    width: 99%;
+  }
+  &__img-container {
+    margin-left: 70px;
+  }
+  &__discription {
+    text-align: center;
+    padding: 40px 0;
+    color: #33333380;
+
+    &--bold {
+      font-weight: bold;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    &__input {
+      width: 100%;
+    }
+    &__btn {
+      max-width: 277.5px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    &__form-container {
+      margin-bottom: 20px;
+    }
+    &__form {
+      flex-direction: column;
+      align-content: center;
+    }
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__img-container {
+      margin-left: 0;
+      width: 70%;
+    }
+    @media screen and (max-width: 468px) {
+      &__img-container {
+        width: 100%;
+      }
+    }
+  }
+}

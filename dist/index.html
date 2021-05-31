@@ -10,24 +10,221 @@
 </head>
 
 <body>
-    <section class="section-about">
+    <section class="section-booking" id="booking">
         <div class="container">
-            <div class="section-about__wrapper">
+            <div class="section-booking__wrapper">
+                <div class="section-booking__form-container">
+                    <h2 class="section-booking__title title">book a table</h2>
+                    <form action="#" method="GET" class="section-booking__form">
+                        <input 
+                            class="section-booking__input"
+                            placeholder="Name"
+                            type="text"
+                            min="2"
+                            pattern="[A-Za-zА-Яа-яЁё]"
+                            required
+                            >
+                        <input 
+                            class="section-booking__input"
+                            placeholder="Email"
+                            type="email"
+                            required>
+                        <input 
+                            class="section-booking__input"
+                            placeholder="Phone"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            minlength="9"
+                            maxlength="13"
+                            type="tel"
+                            required>
+                        <select 
+                            class="section-booking__input"    
+                            name="People"
+                            required>
+                            <option selected disabled>People</option>
+                            <option value="1-2">1-2</option>
+                            <option value="3-4">3-4</option>
+                            <option value="5-6">5-6</option>
+                            <option value="7-8">7-8</option>
+                        </select>
 
-                <div class="section-about__text-description">
-                    <h2 class="section-about__title title">about us</h2>
-                    <p class="section-about__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
-                    <p class="section-about__description">
-                        Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla
-                        facilisis semper laoreet.</p>
+                        <input 
+                            class="section-booking__input"  
+                            placeholder="Date(mm/dd)"  
+                            type="date"
+                            required>
+
+                        <input 
+                            class="section-booking__input" 
+                            type="time"  
+                            min="08:00" 
+                            max="02:00"
+                            required
+                            >
+
+                        <button 
+                            class="section-booking__btn"
+                            
+                            type="submit">BOOK NOW</button>
+                    </form>
                 </div>
 
-                <div class="section-about__img img-border">
+                <div class="section-booking__img-container img-border">
                     <div class="img-border__border"></div>
-                    <img src="./img/about/about_photo.jpg" alt="about" class="img-border__img">
+                    <img src="../dist/img/booking/time_photo.png" alt="time" class="img-border__img">
+                    
+                </div>
+            </div>
+            <p class="section-booking__discription">
+                Mon - Fri: 
+                <span class="section-booking__discription--bold">8PM - 10PM</span>,
+                Sat - Sun: 
+                <span class="section-booking__discription--bold">8PM - 3AM</span>,
+                Phone: 
+                <span class="section-booking__discription--bold">+40 729 131 637/+40 726 458 782</span>
+                </p>
+        </div>
+    </section>
+
+    <section class="section-menu" id="menu">
+        <div class="container">
+            <h2 class="title">DELICIOUS MENU</h2>
+            <p class="section-menu__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+           <ul class="section-menu__menu-list">
+               <li class="section-menu__list-item">SOUPE</li>
+               <li class="section-menu__list-item">PIZZA</li>
+               <li class="section-menu__list-item">PASTA</li>
+               <li class="section-menu__list-item">DESERT</li>
+               <li class="section-menu__list-item">WINE</li>
+               <li class="section-menu__list-item">BEER</li>
+               <li class="section-menu__list-item">DRINKS</li>
+           </ul>
+        
+        <div class="section-menu__pizza-menu">
+           <div class="section-menu__box-discription">
+            <p class="section-menu__discription">
+                <span class="section-menu__main-description">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</span>
+                Integer ullamcorper neque eu purus euismod</p>
+            <p class="section-menu__discription">
+                <span class="section-menu__main-description">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</span>
+                Integer ullamcorper neque eu purus euismod</p>
+            <p class="section-menu__discription">
+                <span class="section-menu__main-description">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</span>
+                Integer ullamcorper neque eu purus euismod</p>
+            <p class="section-menu__discription">
+                <span class="section-menu__main-description">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</span>
+                Integer ullamcorper neque eu purus euismod</p>
+            <p class="section-menu__discription">
+                <span class="section-menu__main-description">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</span>
+                Integer ullamcorper neque eu purus euismod</p>
+            <p class="section-menu__discription">
+                <span class="section-menu__main-description">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</span>
+                Integer ullamcorper neque eu purus euismod</p>
+            <p class="section-menu__discription">
+                <span class="section-menu__main-description">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</span>
+                Integer ullamcorper neque eu purus euismod</p>
+            </div>
+
+            <div class="section-menu__box-discription">
+                <p class="section-menu__discription">
+                    <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                    Integer ullamcorper neque eu purus euismod
+                </p>
+                <p class="section-menu__discription">
+                    <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                    Integer ullamcorper neque eu purus euismod
+                </p>
+                <p class="section-menu__discription">
+                    <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                    Integer ullamcorper neque eu purus euismod
+                </p>
+                <p class="section-menu__discription">
+                    <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                    Integer ullamcorper neque eu purus euismod
+                </p>
+                <p class="section-menu__discription">
+                    <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                    Integer ullamcorper neque eu purus euismod
+                </p>
+                <p class="section-menu__discription">
+                    <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                    Integer ullamcorper neque eu purus euismod
+                </p>
+                <p class="section-menu__discription">
+                    <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                    Integer ullamcorper neque eu purus euismod
+                </p>
+            </div>
+
+            <div class="section-menu__box-discription">
+                <p class="section-menu__discription">
+                    <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                    Integer ullamcorper neque eu purus euismod
+                </p>
+                <p class="section-menu__discription">
+                    <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                    Integer ullamcorper neque eu purus euismod
+                </p>
+                <p class="section-menu__discription">
+                    <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                    Integer ullamcorper neque eu purus euismod
+                </p>
+                <p class="section-menu__discription">
+                    <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                    Integer ullamcorper neque eu purus euismod
+                </p>
+                <p class="section-menu__discription">
+                    <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                    Integer ullamcorper neque eu purus euismod
+                </p>
+                <p class="section-menu__discription">
+                    <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                    Integer ullamcorper neque eu purus euismod
+                </p>
+                <p class="section-menu__discription">
+                    <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                    Integer ullamcorper neque eu purus euismod
+                </p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="section-private" id="private">
+        <div class="container">
+            <h3 class="section-private__title">PRIVATE EVENTS</h3>
+
+            <div class="section-private__wrapper">
+
+                <div class="section-private__img  titled-img-border">
+                    
+
+                    <div class="titled-img-border__border "></div>
+                    
+                    <p class="titled-img-border__title">weddings</p>
+
+                    <img src="../dist/img/private/weddings.jpg" class="titled-img-border__img" alt="weddings">
+                    
+                </div>
+
+
+                <div class="section-private__img  titled-img-border titled-img-border--right">
+                    
+                    <div class="titled-img-border__border"></div>
+
+                    <p class="titled-img-border__title">corporate pzrties</p>
+                    
+                    <img  src="../dist/img/private/corporate_pzrties.jpg" class="titled-img-border__img" alt="corporate">
+                    
+
+                    
                 </div>
 
             </div>
+            <p class="section-private__txt-discription">
+                    For private events please call:
+                 <span class="txt-discription--bold">+40 729 131 637/+40 726 458 782</span> 
+                    or use the contact form.</p>
         </div>
     </section>
 
