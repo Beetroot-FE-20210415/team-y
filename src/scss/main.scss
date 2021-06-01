@@ -1,5 +1,18 @@
 @import "reset";
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+@import "font";
+
+/*
+class="icon-phone" - phone
+class="icon-evenlope" - mail letter
+class="icon-location" - geolocation
+class="icon-instagram" - instagram icon
+class="icon-twitter" - twitter icon
+class="icon-facebook" - facebook icon
+*/
+
 @import "variables";
 @import "base";
 @import "block/blocks.scss";
