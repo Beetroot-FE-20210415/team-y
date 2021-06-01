@@ -23,6 +23,16 @@
   background-repeat: no-repeat;
   background-position: center;
   padding-bottom: 55px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 720px) {
+        flex-direction: column-reverse;
+    }
+}
+
   &__header {
     padding-top: 50px;
     letter-spacing: 5px;
