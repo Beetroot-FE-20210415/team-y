@@ -1,5 +1,26 @@
 .section-master {
-    background-image: url("../img/master/masterbg.png");
+    background-image: url("../img/master/masterbg.jpg");
+    @media
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and ( min--moz-device-pixel-ratio: 2),
+        only screen and ( -o-min-device-pixel-ratio: 2/1),
+        only screen and ( min-device-pixel-ratio: 2),
+        only screen and ( min-resolution: 192dpi),
+        only screen and ( min-resolution: 2dppx) {
+        /* 2x Retina styles here */
+        background-image: url("../img/master/masterbg@2x.jpg");
+    }
+
+    @media
+        only screen and (-webkit-min-device-pixel-ratio: 3),
+        only screen and ( min--moz-device-pixel-ratio: 3),
+        only screen and ( -o-min-device-pixel-ratio: 3/1),
+        only screen and ( min-device-pixel-ratio: 3),
+        only screen and ( min-resolution: 384dpi),
+        only screen and ( min-resolution: 3dppx) {
+        /* 3x Retina styles here */
+        background-image: url("../img/master/masterbg@3x.jpg");
+    }
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -22,10 +43,6 @@
         }
     }
     &__text-description {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         max-width: 600px;
         width: 100%;
         text-align: center;

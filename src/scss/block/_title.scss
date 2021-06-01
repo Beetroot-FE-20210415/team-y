@@ -2,6 +2,27 @@
     color: #fff;
     padding: 320px 0 85px;
     background-image: url("../img/title/title_bg.jpg");
+    @media
+        only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and ( min--moz-device-pixel-ratio: 2),
+        only screen and ( -o-min-device-pixel-ratio: 2/1),
+        only screen and ( min-device-pixel-ratio: 2),
+        only screen and ( min-resolution: 192dpi),
+        only screen and ( min-resolution: 2dppx) {
+        /* 2x Retina styles here */
+        background-image: url("../img/title/title_bg@2x.jpg");
+    }
+
+    @media
+        only screen and (-webkit-min-device-pixel-ratio: 3),
+        only screen and ( min--moz-device-pixel-ratio: 3),
+        only screen and ( -o-min-device-pixel-ratio: 3/1),
+        only screen and ( min-device-pixel-ratio: 3),
+        only screen and ( min-resolution: 384dpi),
+        only screen and ( min-resolution: 3dppx) {
+        /* 3x Retina styles here */
+        background-image: url("../img/title/title_bg@3x.jpg");
+    }
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,7 +42,7 @@
     &__small-schedule {
         writing-mode: vertical-lr;
         -webkit-writing-mode: vertical-lr;
-        -ms-writing-mode: vertical-lr;
+        -ms-writing-mode: bt-lr;
         transform: rotate(0.5turn);
 
         @media screen and (max-width: 720px) {
