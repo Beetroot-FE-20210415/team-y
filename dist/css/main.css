@@ -146,25 +146,25 @@ class="icon-facebook" - facebook icon
   width: 100%;
   padding-top: 100%;
 }
-.img-border__border--left .img-border__border {
+.img-border--left .img-border__border {
   left: 0;
   right: auto;
 }
-.img-border__border--left .img-border__img {
+.img-border--left .img-border__img {
   right: 0;
   left: auto;
 }
 @media screen and (max-width: 720px) {
-  .img-border__border {
+  .img-border {
     overflow: hidden;
   }
-  .img-border__border::before {
+  .img-border::before {
     padding-top: 100%;
   }
-  .img-border__border__border {
+  .img-border__border {
     display: none;
   }
-  .img-border__border__img {
+  .img-border__img {
     height: auto;
     width: 100%;
     object-fit: cover;
