@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <nav class="sticky-nav" id="sticky-nav">
         <ul class="sticky-nav__list">
             <li class="sticky-nav__item">
@@ -80,8 +79,10 @@
                         </a>
                     </li>
                 </ul>
-                <svg class="header__sterring-wheel" viewBox="0 0 150 150" id="sterring-wheel">
-                    <use xlink:href="./img/header/icon.svg#sterring-wheel"></use>
+                <svg class="header__sterring-wheel" viewBox="0 0 150 150" id="sterring-wheel"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="./img/header/icon.svg#sterring-wheel">
+                    </use>
                 </svg>
                 <ul class="header__list">
                     <li class="header__item">
@@ -160,8 +161,310 @@
                 </div>
             </div>
         </section>
-    </main>
+        <section id="about" class="section-about">
+            <div class="container">
+                <div class="section-about__wrapper">
 
+                    <div class="section-about__text-description">
+                        <h2 class="section-about__title title">about us</h2>
+                        <p class="section-about__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+                            at velit maximus, molestie est a, tempor magna.</p>
+                        <p class="section-about__description">
+                            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
+                            ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin
+                            lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla
+                            facilisis semper laoreet.</p>
+                    </div>
+
+                    <div class="section-about__img img-border">
+                        <div class="img-border__border"></div>
+                        <img class="img-border__img" src="./img/about/about-img.jpg" srcset="../dist/img/about/about-img@2x.jpg 2x, ../dist/img/about/about-img@3x.jpg 3x" alt="about">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="section-master">
+            <div class="container">
+                <h2 class="section-master__header">our team</h2>
+
+                <div class="section-master__wrapper">
+
+                    <div class="section-master__img img-border img-border--left">
+                        <div class="img-border__border"></div>
+                        <img class="img-border__img" src="./img/master/master-photo.jpg" srcset="../dist/img/master/master-photo@2x.jpg 2x, ../dist/img/master/master-photo@3x.jpg 3x" alt="chief">
+                    </div>
+
+                    <div class="section-master__text-description">
+                        <h2 class="section-master__title title">MASTER CHEF</h2>
+                        <p class="section-master__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Duis at velit maximus, molestie est a, tempor magna.</p>
+                        <p class="section-master__description">
+                            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
+                            ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin
+                            lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla
+                            facilisis semper laoreet.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="section-booking" id="booking">
+            <div class="container">
+                <div class="section-booking__wrapper">
+                    <div class="section-booking__form-container">
+                        <h2 class="section-booking__title title">book a table</h2>
+                        <form action="#" method="GET" class="section-booking__form">
+                            <input class="section-booking__input" placeholder="Name" type="text"
+                                pattern="[A-Za-zА-Яа-яЁё]+" required>
+                            <input class="section-booking__input" placeholder="Email" type="email" required>
+                            <input class="section-booking__input" placeholder="Phone"
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" minlength="9" maxlength="13" type="tel" required>
+                            <select class="section-booking__input" name="People" required>
+                                <option selected disabled>People</option>
+                                <option value="1-2">1-2</option>
+                                <option value="3-4">3-4</option>
+                                <option value="5-6">5-6</option>
+                                <option value="7-8">7-8</option>
+                            </select>
+
+                            <input class="section-booking__input" type="date" required>
+
+                            <input class="section-booking__input" type="time" min="08:00" max="02:00" required>
+
+                            <button class="section-booking__btn" type="submit">BOOK NOW</button>
+                        </form>
+                    </div>
+
+                    <div class="section-booking__img-container img-border">
+                        <div class="img-border__border"></div>
+                        <img src="../dist/img/booking/time_photo.jpg"
+                            srcset="../dist/img/booking/time_photo@2x.jpg 2x, ../dist/img/booking/time_photo@3x.jpg 3x"
+                            alt="time" class="img-border__img">
+                    </div>
+                </div>
+                <p class="section-booking__discription">
+                    Mon - Fri:
+                    <span class="section-booking__discription--bold">8PM - 10PM</span>,
+                    Sat - Sun:
+                    <span class="section-booking__discription--bold">8PM - 3AM</span>,
+                    Phone:
+                    <span class="section-booking__discription--bold">+40 729 131 637/+40 726 458 782</span>
+                </p>
+            </div>
+        </section>
+
+        <section class="section-menu" id="menu">
+            <div class="container">
+                <h2 class="title">DELICIOUS MENU</h2>
+                <p class="section-menu__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit
+                    maximus, molestie est a, tempor magna.</p>
+                <ul class="section-menu__menu-list">
+                    <li class="section-menu__list-item">SOUPE</li>
+                    <li class="section-menu__list-item">PIZZA</li>
+                    <li class="section-menu__list-item">PASTA</li>
+                    <li class="section-menu__list-item">DESERT</li>
+                    <li class="section-menu__list-item">WINE</li>
+                    <li class="section-menu__list-item">BEER</li>
+                    <li class="section-menu__list-item">DRINKS</li>
+                </ul>
+
+                <div class="section-menu__pizza-menu">
+                    <div class="section-menu__box-discription">
+                        <p class="section-menu__discription">
+                            <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                        <p class="section-menu__discription">
+                            <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                        <p class="section-menu__discription">
+                            <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                        <p class="section-menu__discription">
+                            <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                        <p class="section-menu__discription">
+                            <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                        <p class="section-menu__discription">
+                            <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                        <p class="section-menu__discription">
+                            <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                    </div>
+
+                    <div class="section-menu__box-discription">
+                        <p class="section-menu__discription">
+                            <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                        <p class="section-menu__discription">
+                            <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                        <p class="section-menu__discription">
+                            <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                        <p class="section-menu__discription">
+                            <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                        <p class="section-menu__discription">
+                            <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                        <p class="section-menu__discription">
+                            <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                        <p class="section-menu__discription">
+                            <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                    </div>
+
+                    <div class="section-menu__box-discription">
+                        <p class="section-menu__discription">
+                            <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                        <p class="section-menu__discription">
+                            <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                        <p class="section-menu__discription">
+                            <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                        <p class="section-menu__discription">
+                            <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                        <p class="section-menu__discription">
+                            <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                        <p class="section-menu__discription">
+                            <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                        <p class="section-menu__discription">
+                            <span class="section-menu__main-description">PIZZA QUATRO STAGIONI . . . . 55,68 USD</span>
+                            Integer ullamcorper neque eu purus euismod
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-private" id="private">
+            <div class="container">
+                <h3 class="section-private__title">PRIVATE EVENTS</h3>
+
+                <div class="section-private__wrapper">
+
+                    <div class="section-private__img  titled-img-border">
+
+
+                        <div class="titled-img-border__border "></div>
+
+                        <p class="titled-img-border__title">weddings</p>
+
+                        <img src="../dist/img/private/weddings.jpg"
+                            srcset="../dist/img/private/weddings@2x.jpg 2x, ../dist/img/private/weddings@3x.jpg 3x"
+                            class="titled-img-border__img" alt="weddings">
+
+                    </div>
+                    <div class="section-private__img  titled-img-border titled-img-border--right">
+
+                        <div class="titled-img-border__border"></div>
+
+                        <p class="titled-img-border__title">corporate pzrties</p>
+
+                        <img src="../dist/img/private/corporate_pzrties.jpg"
+                            srcset="../dist/img/private/corporate_pzrties@2x.jpg 2x, ../dist/img/private/corporate_pzrties@3x.jpg 3x"
+                            class="titled-img-border__img" alt="corporate">
+                    </div>
+                </div>
+                <p class="section-private__txt-discription">
+                    For private events please call:
+                    <span class="txt-discription--bold">+40 729 131 637/+40 726 458 782</span>
+                    or use the contact form.
+                </p>
+            </div>
+        </section>
+        <div class="gallery-section" id="gallery">
+            <div class="gallery-section__wrapper"><img class="gallery-section__img" src="./img/private/photos/mazzo.jpg"
+                    srcset="./img/gallery/mazzo@2x.jpg 2x, ./img/gallery/mazzo@3x.jpg 3x" alt="mazzo"></div>
+            <div class="gallery-section__wrapper"><img class="gallery-section__img" src="./img/private/photos/fire.jpg"
+                    srcset="./img/gallery/fire@2x.jpg 2x, ./img/gallery/fire@3x.jpg 3x" alt="fire"></div>
+            <div class="gallery-section__wrapper"><img class="gallery-section__img" src="./img/private/photos/hall.jpg"
+                    srcset="./img/gallery/hall@2x.jpg 2x, ./img/gallery/hall@3x.jpg 3x" alt="hall"></div>
+            <div class="gallery-section__wrapper"><img class="gallery-section__img"
+                    src="./img/private/photos/hall_1.jpg"
+                    srcset="./img/gallery/hall_1@2x.jpg 2x, ./img/gallery/hall_1@3x.jpg 3x" alt="hall_1"></div>
+        </div>
+        <section class="section-contact" id="contact">
+            <div class="container">
+                <h2 class="section-contact__title title">CONTACT</h2>
+                <p class="section-contact__title-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis at velit maximus, molestie est a, tempor magna.</p>
+
+                <form action="#" method="GET" class="section-contact__form">
+                    <input type="text" class="section-contact__input" placeholder="Name" required>
+                    <input type="email" class="section-contact__input" placeholder="Email" required>
+                    <input type="tel" class="section-contact__input" placeholder="Phone" required>
+
+                    <textarea name="text" class="section-contact__input-area" placeholder="Message"
+                        maxlength="300"></textarea>
+
+                    <div class="section-contact__contact">
+                        <a href="#" class="section-contact__contact-item"><i class="fas fa-map-marker-alt"></i>5th
+                            London Boulevard, U.K.</a>
+                        <div class="section-contact__contact-item">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+40 729 131 637"
+                                class="section-contact__contact-item section-contact__contact-item--ma-non">+40 729 131
+                                637</a>
+                            /
+                            <a href="tel:+40 726 458 782"
+                                class="section-contact__contact-item section-contact__contact-item--ma-non">+40 726 458
+                                782</a>
+                        </div>
+                        <a href="mailto:office@mindblister.com" class="section-contact__contact-item"><i
+                                class="fas fa-envelope"></i> office@mindblister.com</a>
+                    </div>
+
+
+                    <button type="submit" class="section-contact__btn">
+                        SEND MESSAGE
+                    </button>
+
+                </form>
+                <div class="section-contact__form-item">
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer" id="footer">
+        <div class="footer-map">
+        </div>
+
+        <div class="footer__txt">© Copyright <span class="footer__txt--bold">Mindblister</span> 2019</div>
+
+    </footer>
+    <script src="https://kit.fontawesome.com/e431a3466b.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
 

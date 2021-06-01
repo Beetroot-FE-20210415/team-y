@@ -1,0 +1,22 @@
+.footer-map {
+  background-image: url("../img/contact/map.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-grow: 1;
+  height: 475px;
+}
+.footer {
+  &__txt {
+    background-color: black;
+    padding: 50px 0;
+    text-align: center;
+    color: #ffffff80;
+    letter-spacing: 1px;
+    font-size: 14px;
+
+    &--bold {
+      font-weight: bold;
+    }
+  }
+}

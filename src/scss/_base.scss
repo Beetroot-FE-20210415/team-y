@@ -1,48 +1,70 @@
 .container {
-    max-width: 1140px;
-    width: 90%;
-    margin: 0 auto;
+  max-width: 1140px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .title {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 36px;
-    position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 36px;
+  position: relative;
+  &::after {
+    width: 60px;
+    height: 5px;
+    background-color: $local-yellow;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: calc(100% + 10px);
+    transform: translate(-50%, -50%) scaleX(1);
+    transition: 0.25s;
+  }
+  &:hover {
     &::after {
-        width: 60px;
-        height: 5px;
-        background-color: $local-yellow;
-        content: "";
-        display: block;
-        position: absolute;
-        left: 50%;
-        top: calc(100% + 10px);
-        transform: translate(-50%, -50%) scaleX(1);
-        transition: 0.25s;
+      transform: translate(-50%, -50%) scaleX(1.5);
     }
-    &:hover {
-        &::after {
-            transform: translate(-50%, -50%) scaleX(1.5);
-        }
-    }
+  }
 }
 
 .img-border {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  position: relative;
 
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 475 / 600 * 100%;
+  }
+
+  &__img {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__border {
+    border-radius: 5px;
+    width: 46.5%;
+    border: 20px solid $local-yellow;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 1;
     &::before {
-        content: "";
-        display: block;
-        padding-top: 475 / 600 * 100%;
+      content: "";
+      display: block;
+      width: 100%;
+      padding-top: 100%;
     }
-
     &__img {
         height: 100%;
         position: absolute;
         top: 0;
         left: 0;
+        box-shadow: 0 0 15px 10px rgba($color: #000000, $alpha: 0.3);
     }
     &__border {
         border-radius: 5px;
@@ -60,13 +82,13 @@
             padding-top: 100%;
         }
     }
+  }
 
     &--left {
         .img-border__border {
             left: 0;
             right: auto;
         }
-
         .img-border__img {
             right: 0;
             left: auto;
@@ -74,17 +96,13 @@
     }
 
     @media screen and (max-width: 720px) {
-
         overflow: hidden;
-
         &::before {
             padding-top: 100%;
         }
-
         &__border {
             display: none;
         }
-
         &__img {
             height: auto;
             width: 100%;
@@ -92,4 +110,5 @@
             border: 10px solid $local-yellow;
         }
     }
+  
 }
