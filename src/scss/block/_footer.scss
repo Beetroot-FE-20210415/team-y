@@ -7,11 +7,10 @@
   height: 475px;
 }
 .footer {
-  background-color: black;
-  padding: 50px 0;
-  text-align: center;
-
   &__txt {
+    background-color: black;
+    padding: 50px 0;
+    text-align: center;
     color: #ffffff80;
     letter-spacing: 1px;
     font-size: 14px;
