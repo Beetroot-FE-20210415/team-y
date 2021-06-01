@@ -4,15 +4,12 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         @media screen and (max-width: 720px) {
             flex-wrap: wrap;
         }
     }
     &__text-description {
-        display: flex;
-        flex-direction: column;
-        flex-direction: column;
-        align-items: center;
         max-width: 600px;
         width: 100%;
         text-align: center;
