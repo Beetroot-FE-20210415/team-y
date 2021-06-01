@@ -82,6 +82,8 @@
             padding-top: 100%;
         }
     }
+  }
+
     &--left {
         .img-border__border {
             left: 0;
@@ -92,6 +94,7 @@
             left: auto;
         }
     }
+
     @media screen and (max-width: 720px) {
         overflow: hidden;
         &::before {
@@ -107,5 +110,5 @@
             border: 10px solid $local-yellow;
         }
     }
-  }
+  
 }

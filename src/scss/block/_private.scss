@@ -1,5 +1,26 @@
 .section-private {
   background-image: url("../img/private/private-bg.jpg");
+  @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and ( min--moz-device-pixel-ratio: 2),
+    only screen and ( -o-min-device-pixel-ratio: 2/1),
+    only screen and ( min-device-pixel-ratio: 2),
+    only screen and ( min-resolution: 192dpi),
+    only screen and ( min-resolution: 2dppx) {
+    /* 2x Retina styles here */
+    background-image: url("../img/private/private-bg@2x.jpg");
+  }
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 3),
+    only screen and ( min--moz-device-pixel-ratio: 3),
+    only screen and ( -o-min-device-pixel-ratio: 3/1),
+    only screen and ( min-device-pixel-ratio: 3),
+    only screen and ( min-resolution: 384dpi),
+    only screen and ( min-resolution: 3dppx) {
+    /* 3x Retina styles here */
+    background-image: url("../img/private/private-bg@3x.jpg");
+  }
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -60,6 +81,8 @@
   &__title {
     color: white;
     writing-mode: vertical-lr;
+        -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: bt-lr;
     background-color: black;
     max-width: 80px;
     width: 80px/600px * 100%;
