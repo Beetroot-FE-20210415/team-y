@@ -214,8 +214,8 @@
                     <div class="section-booking__form-container">
                         <h2 class="section-booking__title title">book a table</h2>
                         <form action="#" method="GET" class="section-booking__form">
-                            <input class="section-booking__input" placeholder="Name" type="text" min="2"
-                                pattern="[A-Za-zА-Яа-яЁё]" required>
+                            <input class="section-booking__input" placeholder="Name" type="text"
+                                pattern="[A-Za-zА-Яа-яЁё]+" required>
                             <input class="section-booking__input" placeholder="Email" type="email" required>
                             <input class="section-booking__input" placeholder="Phone"
                                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" minlength="9" maxlength="13" type="tel" required>
@@ -227,7 +227,7 @@
                                 <option value="7-8">7-8</option>
                             </select>
 
-                            <input class="section-booking__input" placeholder="Date(mm/dd)" type="date" required>
+                            <input class="section-booking__input" type="date" required>
 
                             <input class="section-booking__input" type="time" min="08:00" max="02:00" required>
 
@@ -396,7 +396,7 @@
                 </p>
             </div>
         </section>
-        <section class="gallery-section" id="gallery">
+        <div class="gallery-section" id="gallery">
             <div class="gallery-section__wrapper"><img class="gallery-section__img" src="./img/private/photos/mazzo.jpg"
                     alt="mazzo"></div>
             <div class="gallery-section__wrapper"><img class="gallery-section__img" src="./img/private/photos/fire.jpg"
@@ -405,7 +405,7 @@
                     alt="hall"></div>
             <div class="gallery-section__wrapper"><img class="gallery-section__img"
                     src="./img/private/photos/hall_1.jpg" alt="hall_1"></div>
-        </section>
+        </div>
         <section class="section-contact" id="contact">
             <div class="container">
                 <h2 class="section-contact__title title">CONTACT</h2>
