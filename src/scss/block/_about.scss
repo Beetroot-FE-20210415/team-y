@@ -1,0 +1,38 @@
+.section-about {
+    background-color: white;
+    padding: 100px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 720px) {
+            flex-wrap: wrap;
+        }
+    }
+    &__text-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+        padding: 0 2.5%;
+        @media screen and (max-width: 720px) {
+            margin-bottom: 20px;
+        }
+    }
+    &__description {
+        font-size: 14px;
+    }
+    &__title {
+        margin-bottom: 61px;
+    }
+    &__subtitle {
+        font-weight: 700;
+        margin-bottom: 25px;
+        font-size: 18px;
+    }
+    &__img {
+        width: 100%;
+    }
+}

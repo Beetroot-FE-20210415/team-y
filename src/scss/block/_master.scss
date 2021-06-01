@@ -1,0 +1,55 @@
+.section-master {
+    background-image: url("../img/master/masterbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 55px;
+    &__header {
+        padding-top: 50px;
+        letter-spacing: 5px;
+        font-size: 12px;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width: 720px) {
+            flex-direction: column-reverse;
+        }
+    }
+    &__text-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 600px;
+        width: 100%;
+        text-align: center;
+        padding: 0 2.5%;
+    }
+    &__title {
+        text-align: center;
+        margin-bottom: 61px;
+        color: white;
+        font-weight: 500;
+        font-size: 36px;
+    }
+    &__subtitle {
+        font-weight: 700;
+        margin-bottom: 25px;
+        font-size: 18px;
+        color: white;
+    }
+    &__description {
+        font-size: 14px;
+        color: white;
+        opacity: 0.7;
+        @media screen and (max-width: 720px) {
+            margin-bottom: 35px;
+        }
+    }
+}
