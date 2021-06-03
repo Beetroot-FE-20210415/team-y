@@ -13,10 +13,17 @@
     margin-bottom: 50px;
   }
   &__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     max-width: 1280px;
     width: 100%;
   }
@@ -40,22 +47,33 @@
     margin-bottom: 10px;
   }
   &__form-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
   }
   &__contact {
     width: 49%;
     margin-right: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   &__contact-item {
     text-decoration: none;
     font-size: 12px;
     color: #33333380;
     border-bottom: 1px solid transparent;
+    -webkit-transition: border 0.25s;
+    -o-transition: border 0.25s;
     transition: border 0.25s;
     &--ma-non {
       margin-right: 0;
@@ -72,6 +90,8 @@
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    -webkit-transition: background-color 0.25s;
+    -o-transition: background-color 0.25s;
     transition: background-color 0.25s;
   }
   &__btn:hover {
@@ -79,7 +99,9 @@
   }
   @media screen and (max-width: 1240px) {
     &__contact {
-      justify-content: flex-start;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
     }
     &__contact-item {
       margin: 5px;

@@ -1,7 +1,6 @@
 .section-master {
   background-image: url("../img/master/masterbg.jpg");
   @media only screen and (-webkit-min-device-pixel-ratio: 2),
-    only screen and (min--moz-device-pixel-ratio: 2),
     only screen and (-o-min-device-pixel-ratio: 2/1),
     only screen and (min-device-pixel-ratio: 2),
     only screen and (min-resolution: 192dpi),
@@ -11,9 +10,10 @@
   }
 
   @media only screen and (-webkit-min-device-pixel-ratio: 3),
-    only screen and (min--moz-device-pixel-ratio: 3),
     only screen and (-o-min-device-pixel-ratio: 3/1),
     only screen and (min-device-pixel-ratio: 3),
+    only screen and (-webkit-min-device-pixel-ratio: 4),
+    only screen and (-o-min-device-pixel-ratio: 4/1),
     only screen and (min-resolution: 384dpi),
     only screen and (min-resolution: 3dppx) {
     /* 3x Retina styles here */
@@ -25,11 +25,20 @@
   padding-bottom: 55px;
 
   &__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     @media screen and (max-width: 720px) {
-        flex-direction: column-reverse;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
     }
 }
 

@@ -17,12 +17,12 @@ function ScrollMenu (id_icon, id_dropBar) {
 
 ScrollMenu.prototype.open = function () {
     this.dropBar.classList.add(this.baseClass + "--visible");
-    this.dropBar.style.height = this.dropBar.scrollHeight + 175 + "px"
+    // this.dropBar.style.height = this.dropBar.scrollHeight + 175 + "px"
 }
 
 ScrollMenu.prototype.close = function () {
     this.dropBar.classList.remove(this.baseClass + "--visible");
-    this.dropBar.style.height = "0px";
+    // this.dropBar.style.height = "0px";
 }
 
 const menu = new ScrollMenu("sterring-wheel", "sticky-nav");
