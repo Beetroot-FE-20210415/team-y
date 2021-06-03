@@ -18,12 +18,18 @@
     position: absolute;
     left: 50%;
     top: calc(100% + 10px);
-    transform: translate(-50%, -50%) scaleX(1);
+    -webkit-transform: translate(-50%, -50%) scaleX(1);
+        -ms-transform: translate(-50%, -50%) scaleX(1);
+            transform: translate(-50%, -50%) scaleX(1);
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
     transition: 0.25s;
   }
   &:hover {
     &::after {
-      transform: translate(-50%, -50%) scaleX(1.5);
+      -webkit-transform: translate(-50%, -50%) scaleX(1.5);
+          -ms-transform: translate(-50%, -50%) scaleX(1.5);
+              transform: translate(-50%, -50%) scaleX(1.5);
     }
   }
 }
@@ -31,6 +37,9 @@
 .img-border {
   width: 100%;
   position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
 
   &::before {
     content: "";
@@ -51,7 +60,9 @@
     position: absolute;
     right: 0;
     top: 50%;
-    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
     z-index: 1;
     &::before {
       content: "";
@@ -64,7 +75,8 @@
         position: absolute;
         top: 0;
         left: 0;
-        box-shadow: 0 0 15px 10px rgba($color: #000000, $alpha: 0.3);
+        -webkit-box-shadow: 0 0 15px 10px rgba($color: #000000, $alpha: 0.3);
+                box-shadow: 0 0 15px 10px rgba($color: #000000, $alpha: 0.3);
     }
     &__border {
         border-radius: 5px;
@@ -73,7 +85,9 @@
         position: absolute;
         right: 0;
         top: 50%;
-        transform: translate(0, -50%);
+        -webkit-transform: translate(0, -50%);
+            -ms-transform: translate(0, -50%);
+                transform: translate(0, -50%);
         z-index: 1;
         &::before {
             content: "";
@@ -106,7 +120,8 @@
         &__img {
             height: auto;
             width: 100%;
-            object-fit: cover;
+            -o-object-fit: cover;
+               object-fit: cover;
             border: 10px solid $local-yellow;
         }
     }

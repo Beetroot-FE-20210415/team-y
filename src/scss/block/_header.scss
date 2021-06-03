@@ -13,21 +13,37 @@ ul {
 
   &__wrapper {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 
     @media screen and (max-width: 800px) {
-      justify-content: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
     }
   }
 
   &__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-top: 25px;
-    flex: 0 2 100%;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 2 100%;
+            flex: 0 2 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     @media screen and (max-width: 800px) {
       display: none;
@@ -35,7 +51,9 @@ ul {
   }
 
   &__item {
-    flex: 0 1 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
     text-align: center;
   }
 
@@ -53,26 +71,42 @@ ul {
       background-color: $local-yellow;
       position: absolute;
       bottom: 1.5em;
+      -webkit-transition: -webkit-transform $header-transition-time;
+      transition: -webkit-transform $header-transition-time;
+      -o-transition: transform $header-transition-time;
       transition: transform $header-transition-time;
-      transform: scaleX(0);
+      transition: transform $header-transition-time, -webkit-transform $header-transition-time;
+      -webkit-transform: scaleX(0);
+          -ms-transform: scaleX(0);
+              transform: scaleX(0);
     }
 
     &:hover::before {
-      transform: scaleX(1);
+      -webkit-transform: scaleX(1);
+          -ms-transform: scaleX(1);
+              transform: scaleX(1);
     }
   }
 
   &__sterring-wheel {
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
     width: $sterring-wheel-width;
+    -webkit-transition: -webkit-transform $header-transition-time;
+    transition: -webkit-transform $header-transition-time;
+    -o-transition: transform $header-transition-time;
     transition: transform $header-transition-time;
+    transition: transform $header-transition-time, -webkit-transform $header-transition-time;
 
     @media screen and (max-width: 800px) {
       cursor: pointer;
       z-index: 10;
 
       &--clicked {
-        transform: rotate(5turn);
+        -webkit-transform: rotate(5turn);
+            -ms-transform: rotate(5turn);
+                transform: rotate(5turn);
         position: fixed;
         top: 25px;
         right: 0;
@@ -85,6 +119,7 @@ ul {
 
 .sticky-nav {
   // padding-top: $sterring-wheel-width;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   left: 0;
@@ -94,6 +129,8 @@ ul {
   display: none;
   overflow: hidden;
   background-color: #777;
+  -webkit-transition: all $header-transition-time;
+  -o-transition: all $header-transition-time;
   transition: all $header-transition-time;
   color: $header-text-color;
   text-transform: uppercase;
@@ -113,6 +150,8 @@ ul {
   &__item {
     width: 100%;
     border-bottom: 2px solid #000;
+    -webkit-transition: background-color $header-transition-time;
+    -o-transition: background-color $header-transition-time;
     transition: background-color $header-transition-time;
 
     &:first-child {
